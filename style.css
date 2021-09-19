@@ -1,0 +1,123 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+i,
+div,
+body{
+    font-family: 'Spartan', sans-serif;
+}
+
+
+.header-section{
+    background-color: #D4D5D0;
+}
+
+.menu ul li{
+    position: relative;
+}
+.menu ul li a{
+    font-size: 14px;
+    font-weight: 500;
+}
+.menu ul li a::before{
+    content: "";
+    height: 5%;
+    width: 0;
+    background-color: #0B5ED7;
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    transition: .4s;
+}
+.menu ul li a:hover::before{
+    width: 40%;
+}
+.menu ul li a:hover{
+    color: #0B5ED7 !important;
+}
+.menu ul li:first-child a{
+    color: #0B5ED7;
+}
+.menu ul li:first-child a::before{
+    content: "";
+    height: 5%;
+    width: 40%;
+    background-color: #0B5ED7;
+    position: absolute;
+    top: 155%;
+    left: 20%;
+}
+.menu ul li{
+    position: relative;
+}
+.menu ul li ul{
+    width: 200px;
+    padding: 7px 5px;
+    color: #fff;
+    background-color: #3763EB;
+    border: 8px solid #fff;
+    position: absolute;
+    top: 135%;
+    left: 0;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    transition: .4s;
+
+}
+.menu ul li ul li{
+    list-style: none;
+}
+.menu ul li ul li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff !important;
+    
+}
+.menu ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.banner-section{
+    background-color: #F6F9FC;
+    z-index: -1;
+}
+.banner-section .space{
+    height: 600px;
+    position: relative;
+}
+.space .banner-image img{
+    height: 750px;
+    width: 800px;
+    border-radius: 50%;
+    position: absolute;
+    top: -155px;
+    right: -145px;
+    
+}
+.space{
+    overflow: hidden;
+}
+
+/* banner-section */
+.text-prime{
+    margin-top: 150px;
+    padding-right: 100px;
+}
+.text-prime h1{
+    font-weight: 600;
+    margin: 20px 0;
+}
+.text-prime p{
+    color: #696966;
+    margin: 20px 0;
+}
+.text-prime .button .choto{
+    font-size: 16px;
+    font-weight: 600;
+}
